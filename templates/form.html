@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>icoc form</title>
+</head>
+<body style="background-color:powderblue;">
+
+    <h2>
+        This questionnaire will measure the strength of your abandonment lifetrap. 
+        Please read each statement and decide how well it describes you. 
+        When you are not sure, base answer on what you emotionally feel not what you think to be true, 
+        If you desire, reword the statement so that the statement even be more accurate in describing you 
+        (but do not change the basic meaning of the question) . 
+        Then choose the highest rating from 1 to 6 that describes you (including your revisions) .
+    </h2>
+    <h4>
+        <p>Rating Scale:</p>
+        <ol>
+            <li>Completely untrue of me</li>
+            <li>Mostly untrue of me</li>
+            <li>ore true than untrue</li>
+            <li>Moderately true</li>
+            <li>Mostly true of me</li>
+            <li>Describes me perfectly</li>
+
+        </ol>
+    </h4>
+
+    <form action="/login/", method="post">
+        <p>Username:
+        <input type="text" name="username" size="15"
+        maxlength="30" />
+        </p>
+        <p>Password:
+        <input type="text" name="password" size="15"
+        maxlength="30" />
+        </p>
+        <input type="submit", name="submit" value="Submit review"/>
+    </form>
+
+    <form action="/submit/" method="post">
+    <fieldset>
+            <p>I worry that people I feel close to will leave me or abandon me
+                <br />
+                <input type="checkbox" name="worries" value="1" />1
+                <input type="checkbox" name="worries"value="2" /> 2
+                <input type="checkbox" name="worries"value="3" /> 3
+                <input type="checkbox" name="worries"value="4" /> 4
+                <input type="checkbox" name="worries"value="5" /> 5
+                <input type="checkbox" name="worries"value="6" /> 6
+            </p>
+
+            <p>I don’t feel that important relationships will last; I expect them to end
+                <br />
+                <input type="checkbox" name="relate" value="1" />1
+                <input type="checkbox" name="relate"value="2" /> 2
+                <input type="checkbox" name="relate"value="3" /> 3
+                <input type="checkbox" name="relate"value="4" /> 4
+                <input type="checkbox" name="relate"value="5" /> 5
+                <input type="checkbox" name="relate"value="6" /> 6
+            </p>
+
+            <p>I become upset when someone leaves me alone,  even for a short period of time
+                <br />
+                <input type="checkbox" name="depends" value="1" />1
+                <input type="checkbox" name="depends"value="2" /> 2
+                <input type="checkbox" name="depends"value="3" /> 3
+                <input type="checkbox" name="depends"value="4" /> 4
+                <input type="checkbox" name="depends"value="5" /> 5
+                <input type="checkbox" name="depends"value="6" /> 6
+            </p>
+
+            <p>I cannot count on people who support me to be there on a regular basis
+                <br />
+                <input type="checkbox" name="trust" value="1" />1
+                <input type="checkbox" name="trust"value="2" /> 2
+                <input type="checkbox" name="trust"value="3" /> 3
+                <input type="checkbox" name="trust"value="4" /> 4
+                <input type="checkbox" name="trust"value="5" /> 5
+                <input type="checkbox" name="trust"value="6" /> 6
+            </p>
+
+            <p>I cannot be myself or express what I really feel, or people will leave me
+                <br />
+                <input type="checkbox" name="express" value="1" />1
+                <input type="checkbox" name="express"value="2" /> 2
+                <input type="checkbox" name="express"value="3" /> 3
+                <input type="checkbox" name="express"value="4" /> 4
+                <input type="checkbox" name="express"value="5" /> 5
+                <input type="checkbox" name="express"value="6" /> 6
+            </p>
+
+    <br />
+    <input type="submit" value="Submit" />
+    </fieldset>
+    </form>
+    
+
+</body>
+
+</html>
