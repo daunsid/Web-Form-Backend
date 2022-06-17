@@ -30,6 +30,7 @@ async def main(request:Request):
     return templates.TemplateResponse("form.html", context={"request":request})
 
 
+
 @app.post("/submit", response_class=HTMLResponse)
 def submit_file(*, request:Request, relate:str=Form(...),
                 worries:str=Form(...),
@@ -38,5 +39,14 @@ def submit_file(*, request:Request, relate:str=Form(...),
                 express:str=Form(...)):
 
     print(relate)
-
-    return templates.TemplateResponse("response.html", context={"request":request})
+    htmlbody = f'''
+    <h2>
+    <p>relate:{relate}</p>
+    <p>worries:{worries}</p>
+    <p>depends:{depends}</p>
+    <p>trust:{trust}</p>
+    <p>express:{express}</p>
+    <h2>
+    '''
+    return htmlbody
+    #return templates.TemplateResponse("response.html", context={"request":request})
